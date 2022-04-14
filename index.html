@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Diogenes Charutarias</title>
+
+
+
+  <link rel="stylesheet" href="style.css" />
+
+
+ 
+
+</head>
+<body>
+
+  <div>
+
+
+   <!-- tag responsavel por criar imagem -->
+   <img src="https://yata-apix-7cca9a07-73ec-4278-935b-a3c292e81061.lss.locawebcorp.com.br/942d13d441c745d0b900b2b54ce10875.png" />
+
+
+   <!-- tag respônsavel por criar titulo -->
+   <h1>DIOGINES CHARUTARIAS </h1>
+
+   <div>
+
+    <!--tag responsavel pelo o nome do usuario-->
+    <input id="nome" type="text"  placeholder="Digite o nome";  />
+    
+    <!--tag responsavel pelo nome d usuario-->
+    <input id="nascimento" type="number" placeholder="sua data de nascimento"   />
+    
+    <!-- Botão verificar-->
+    <button onclick="clickNoBotao()">verificar </button>
+
+    </div>
+
+    <h4>    </h4>
+     
+  <script>
+     
+     function clickNoBotao() {
+      
+       //responsavel por pegar o input de nome pelo ID
+       const inputNome = document.getElementById('nome').value;
+       
+       //resposnavel por pegar o input de ano de nascimento pelo ID
+      const inputNascimento = document.getElementById('nascimento').value;
+
+      //responsável por guardar o ano atual utuilizando Date do JavaScript
+      const anoAtual =new Date().getFullYear();
+
+      //responsavel por retorar  idade do usuário
+     const idade = anoAtual - inputNascimento
+
+
+     if(idade >=18) {
+         const mensagem = `permitir a compra da pessoa ${inputNome} pois ela é maior que 18 anos!`
+
+        // pegando a TAG h4 com querSelector e adicionando uma mensagem 
+         document.querySelector('h4').innerText=mensagem
+
+     } else {
+       const mensagem = `Não permitir a compra da pessoa ${inputNome} pois ela é menor que 18 anos!`
+      
+        //pegando a TAG h4 com querSelector e adicionando uma mensagem
+       document.querySelector('h4').innerText=mensagem
+
+     }     
+
+      console.log(anoAtual)
+      console.log(idade)
+    
+      
+    }
+
+  </script>
+  
+  </body>
+</html>

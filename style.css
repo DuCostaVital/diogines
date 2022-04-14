@@ -1,0 +1,59 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+body{
+    background-color: rgb(243, 243, 243);
+    
+}
+
+
+h1 {
+    background-color: rgb(55, 0, 255);
+    width: 30 px;
+    height: 40px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h1 {
+    color:rgb(205, 217, 255);   
+    text-align: center;
+
+}
+
+div{
+   display: flex ;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+
+}
+
+button{
+ color: rgba(245, 209, 9, 0.822);
+ font-weight: bold;
+ width: 100px;
+ height: 30px;
+ border: none;
+ border-radius: 10px;
+
+
+}
+
+
+h4{
+    text-align: center;
+}
+
+
+
+
+
+
